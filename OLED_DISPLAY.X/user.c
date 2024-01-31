@@ -190,10 +190,7 @@ void CalculateDisplayValues(void){
         vehicle.lap_joule = 0;
     }
     
-    if(vehicle.lap_number==0){
-        vehicle.lap_sec = 0;
-        vehicle.distance = 0;
-    }
+    
 
 } 
 
@@ -248,6 +245,10 @@ void UpdateDisplay(uint8_t brightness){
            
         
     // TIME    
+        if(vehicle.lap_number==0){
+            vehicle.lap_sec = 0;
+            vehicle.distance = 0;
+        }
         select_font(&Font5x7FixedMono);
         draw_text(tx_buf, "T", 0, 27, brightness);
         select_font(&FreeSans9pt7b);
