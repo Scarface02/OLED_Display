@@ -5,11 +5,11 @@ Tool Name:
 
 Command:
   -p33EV256GM106 \
-  --mdfp=C:/Users/SZEnergy/.mchp_packs/Microchip/dsPIC33EV-GM-00X-10X_DFP/1.2.51/xc16 \
+  --mdfp=C:/Users/orsza/.mchp_packs/Microchip/dsPIC33EV-GM-00X-10X_DFP/1.2.51/xc16 \
   -o \
   dist/default/production/OLED_DISPLAY.X.production.elf \
   -Lc:/program files/microchip/xc16/v2.00/bin/bin/.. \
-  -LC:/Users/SZEnergy/.mchp_packs/Microchip/dsPIC33EV-GM-00X-10X_DFP/1.2.51/xc16/bin/../support/dsPIC33E/gld \
+  -LC:/Users/orsza/.mchp_packs/Microchip/dsPIC33EV-GM-00X-10X_DFP/1.2.51/xc16/bin/../support/dsPIC33E/gld \
   -Lc:/program files/microchip/xc16/v2.00/bin/bin/../../lib \
   -Lc:/program files/microchip/xc16/v2.00/bin/bin/../../support/PIC24E/gld \
   -Lc:/program files/microchip/xc16/v2.00/bin/bin/../../support/PIC24F/gld \
@@ -158,11 +158,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0xce4          0x1356  (4950)
 .const                       0xee4              0x4caa          0x72ff  (29439)
-.text                       0x5b8e              0x2ee4          0x4656  (18006)
-.dinit                      0x8a72               0x378           0x534  (1332)
-.text                       0x8dea               0xb3e          0x10dd  (4317)
+.text                       0x5b8e              0x2f08          0x468c  (18060)
+.dinit                      0x8a96               0x378           0x534  (1332)
+.text                       0x8e0e               0xb3e          0x10dd  (4317)
 
-                 Total "program" memory used (bytes):         0xe2bc  (58044) 22%
+                 Total "program" memory used (bytes):         0xe2f2  (58098) 22%
 
 
 "data" Memory  [Origin = 0x1000, Length = 0x4000]
@@ -175,7 +175,7 @@ section                    address      alignment gaps    total length  (dec)
 .bss                        0x1070                   0          0x2056  (8278)
 .data                       0x30c6                   0           0x496  (1174)
 .bss                        0x355c                   0            0x24  (36)
-_0000000005FB7B4065ba2fa2    0x3600                   0           0x200  (512)
+_0000000006796B4065bccf98    0x3600                   0           0x200  (512)
 
                  Total "data" memory used (bytes):         0x2780  (10112) 61%
 
@@ -391,152 +391,152 @@ External Symbols in Program Memory (by address):
                   0x006e86                  _CAN_Transmit
                   0x006eca                  _CalculateDisplayValues
                   0x00707c                  _UpdateDisplay
-                  0x007632                  _itoa
-                  0x00768c                  _GetBrightnessADC
-                  0x00772e                  _SpeedArrow
-                  0x007bea                  _AccChevron
-                  0x007dce                  _GoToSleep
-                  0x007dea                  _ReturnFromSleep
-                  0x0082ae                  _CAN1_Initialize
-                  0x008448                  _CAN1_TransmitEnable
-                  0x008462                  _CAN1_ReceiveEnable
-                  0x00847c                  _CAN1_OperationModeSet
-                  0x0084d2                  _CAN1_OperationModeGet
-                  0x0084e0                  _CAN1_Transmit
-                  0x00859a                  _CAN1_Receive
-                  0x008624                  _CAN1_IsBusOff
-                  0x00863c                  _CAN1_IsRXErrorPassive
-                  0x008654                  _CAN1_IsRxErrorWarning
-                  0x00866c                  _CAN1_IsRxErrorActive
-                  0x008688                  _CAN1_IsTXErrorPassive
-                  0x0086a0                  _CAN1_IsTxErrorWarning
-                  0x0086b8                  _CAN1_IsTxErrorActive
-                  0x0086d4                  _CAN1_ReceivedMessageCountGet
-                  0x00871e                  _CAN1_Sleep
-                  0x008748                  _CAN1_SetBusErrorHandler
-                  0x00875c                  _CAN1_SetTxErrorPassiveHandler
-                  0x008770                  _CAN1_SetRxErrorPassiveHandler
-                  0x008782                  _CAN1_SetBusWakeUpActivityInterruptHandler
-                  0x008796                  _CAN1_SetRxBufferInterruptHandler
-                  0x0087a2                  _CAN1_transmit
-                  0x0088ac                  _CAN1_receive
-                  0x0089a0                  _CAN1_isBusOff
-                  0x0089b8                  _CAN1_isRXErrorPassive
-                  0x0089d0                  _CAN1_isTXErrorPassive
-                  0x0089e8                  _CAN1_messagesInBuffer
-                  0x008a32                  _CAN1_sleep
-                  0x008dea                  _SSD1322_API_command
-                  0x008dfc                  _SSD1322_API_data
-                  0x008e0e                  _SSD1322_API_init
-                  0x008ec8                  _SSD1322_API_set_display_mode
-                  0x008efc                  _SSD1322_API_sleep_on
-                  0x008f06                  _SSD1322_API_sleep_off
-                  0x008f10                  _SSD1322_API_set_contrast
-                  0x008f20                  _SSD1322_API_set_brightness
-                  0x008f32                  _SSD1322_API_custom_grayscale
-                  0x008f74                  _SSD1322_API_default_grayscale
-                  0x008f7e                  _SSD1322_API_set_window
-                  0x008fb4                  _SSD1322_API_send_buffer
-                  0x008fd4                  _SPI1_Initialize
-                  0x008fe6                  _SPI1_Exchange
-                  0x00900e                  _SPI1_ExchangeBuffer
-                  0x009120                  _SPI1_Exchange8bit
-                  0x009132                  _SPI1_Exchange8bitBuffer
-                  0x00914e                  _SPI1_StatusGet
-                  0x009156                  _TMR1_Initialize
-                  0x00917a                  _TMR1_Period16BitSet
-                  0x00918c                  _TMR1_Period16BitGet
-                  0x009194                  _TMR1_Counter16BitSet
-                  0x0091a6                  _TMR1_Counter16BitGet
-                  0x009260                  _TMR1_SetInterruptHandler
-                  0x009270                  _TMR1_Start
-                  0x009280                  _TMR1_Stop
-                  0x00928a                  _TMR1_GetElapsedThenClear
-                  0x0092a2                  _TMR1_SoftwareCounterGet
-                  0x0092ae                  _TMR1_SoftwareCounterClear
-                  0x0092ba                  _RESET_GetCause
-                  0x0093de                  _RESET_CauseClearAll
-                  0x0093e6                  _main
-                  0x0094aa                  _UART1_Initialize
-                  0x0094be                  _UART1_Read
-                  0x0094dc                  _UART1_Write
-                  0x0094f4                  _UART1_IsRxReady
-                  0x00950c                  _UART1_IsTxReady
-                  0x00952e                  _UART1_IsTxDone
-                  0x009546                  _UART1_StatusGet
-                  0x00954e                  _UART1_Enable
-                  0x009558                  _UART1_Disable
-                  0x009562                  _TMR2_Initialize
-                  0x009578                  _TMR2_Tasks_16BitOperation
-                  0x00959a                  _TMR2_Period16BitSet
-                  0x0095ac                  _TMR2_Period16BitGet
-                  0x0095b4                  _TMR2_Counter16BitSet
-                  0x0095c6                  _TMR2_Counter16BitGet
-                  0x0095ce                  _TMR2_Start
-                  0x0095dc                  _TMR2_Stop
-                  0x0095e4                  _TMR2_GetElapsedThenClear
-                  0x0095fc                  _TMR2_SoftwareCounterGet
-                  0x009608                  _TMR2_SoftwareCounterClear
-                  0x009614                  _PIN_MANAGER_Initialize
-                  0x0096c2                  _DMA_Initialize
-                  0x009734                  _DMA_Channel1_Tasks
-                  0x009754                  _DMA_Channel3_Tasks
-                  0x009766                  _SSD1322_HW_drive_CS_low
-                  0x00976e                  _SSD1322_HW_drive_CS_high
-                  0x009776                  _SSD1322_HW_drive_DC_low
-                  0x00977e                  _SSD1322_HW_drive_DC_high
-                  0x009786                  _SSD1322_HW_drive_RESET_low
-                  0x00978e                  _SSD1322_HW_drive_RESET_high
-                  0x009796                  _SSD1322_HW_SPI_send_byte
-                  0x0097a2                  _SSD1322_HW_SPI_send_array
-                  0x0097d4                  _SSD1322_HW_msDelay
-                  0x0097fe                  _CLOCK_Initialize
-                  0x009850                  _ADC1_Initialize
-                  0x009874                  _ADC1_SetInterruptHandler
-                  0x0098ba                  _SYSTEM_Initialize
-                  0x0098d8                  _INTERRUPT_Initialize
+                  0x007656                  _itoa
+                  0x0076b0                  _GetBrightnessADC
+                  0x007752                  _SpeedArrow
+                  0x007c0e                  _AccChevron
+                  0x007df2                  _GoToSleep
+                  0x007e0e                  _ReturnFromSleep
+                  0x0082d2                  _CAN1_Initialize
+                  0x00846c                  _CAN1_TransmitEnable
+                  0x008486                  _CAN1_ReceiveEnable
+                  0x0084a0                  _CAN1_OperationModeSet
+                  0x0084f6                  _CAN1_OperationModeGet
+                  0x008504                  _CAN1_Transmit
+                  0x0085be                  _CAN1_Receive
+                  0x008648                  _CAN1_IsBusOff
+                  0x008660                  _CAN1_IsRXErrorPassive
+                  0x008678                  _CAN1_IsRxErrorWarning
+                  0x008690                  _CAN1_IsRxErrorActive
+                  0x0086ac                  _CAN1_IsTXErrorPassive
+                  0x0086c4                  _CAN1_IsTxErrorWarning
+                  0x0086dc                  _CAN1_IsTxErrorActive
+                  0x0086f8                  _CAN1_ReceivedMessageCountGet
+                  0x008742                  _CAN1_Sleep
+                  0x00876c                  _CAN1_SetBusErrorHandler
+                  0x008780                  _CAN1_SetTxErrorPassiveHandler
+                  0x008794                  _CAN1_SetRxErrorPassiveHandler
+                  0x0087a6                  _CAN1_SetBusWakeUpActivityInterruptHandler
+                  0x0087ba                  _CAN1_SetRxBufferInterruptHandler
+                  0x0087c6                  _CAN1_transmit
+                  0x0088d0                  _CAN1_receive
+                  0x0089c4                  _CAN1_isBusOff
+                  0x0089dc                  _CAN1_isRXErrorPassive
+                  0x0089f4                  _CAN1_isTXErrorPassive
+                  0x008a0c                  _CAN1_messagesInBuffer
+                  0x008a56                  _CAN1_sleep
+                  0x008e0e                  _SSD1322_API_command
+                  0x008e20                  _SSD1322_API_data
+                  0x008e32                  _SSD1322_API_init
+                  0x008eec                  _SSD1322_API_set_display_mode
+                  0x008f20                  _SSD1322_API_sleep_on
+                  0x008f2a                  _SSD1322_API_sleep_off
+                  0x008f34                  _SSD1322_API_set_contrast
+                  0x008f44                  _SSD1322_API_set_brightness
+                  0x008f56                  _SSD1322_API_custom_grayscale
+                  0x008f98                  _SSD1322_API_default_grayscale
+                  0x008fa2                  _SSD1322_API_set_window
+                  0x008fd8                  _SSD1322_API_send_buffer
+                  0x008ff8                  _SPI1_Initialize
+                  0x00900a                  _SPI1_Exchange
+                  0x009032                  _SPI1_ExchangeBuffer
+                  0x009144                  _SPI1_Exchange8bit
+                  0x009156                  _SPI1_Exchange8bitBuffer
+                  0x009172                  _SPI1_StatusGet
+                  0x00917a                  _TMR1_Initialize
+                  0x00919e                  _TMR1_Period16BitSet
+                  0x0091b0                  _TMR1_Period16BitGet
+                  0x0091b8                  _TMR1_Counter16BitSet
+                  0x0091ca                  _TMR1_Counter16BitGet
+                  0x009284                  _TMR1_SetInterruptHandler
+                  0x009294                  _TMR1_Start
+                  0x0092a4                  _TMR1_Stop
+                  0x0092ae                  _TMR1_GetElapsedThenClear
+                  0x0092c6                  _TMR1_SoftwareCounterGet
+                  0x0092d2                  _TMR1_SoftwareCounterClear
+                  0x0092de                  _RESET_GetCause
+                  0x009402                  _RESET_CauseClearAll
+                  0x00940a                  _main
+                  0x0094ce                  _UART1_Initialize
+                  0x0094e2                  _UART1_Read
+                  0x009500                  _UART1_Write
+                  0x009518                  _UART1_IsRxReady
+                  0x009530                  _UART1_IsTxReady
+                  0x009552                  _UART1_IsTxDone
+                  0x00956a                  _UART1_StatusGet
+                  0x009572                  _UART1_Enable
+                  0x00957c                  _UART1_Disable
+                  0x009586                  _TMR2_Initialize
+                  0x00959c                  _TMR2_Tasks_16BitOperation
+                  0x0095be                  _TMR2_Period16BitSet
+                  0x0095d0                  _TMR2_Period16BitGet
+                  0x0095d8                  _TMR2_Counter16BitSet
+                  0x0095ea                  _TMR2_Counter16BitGet
+                  0x0095f2                  _TMR2_Start
+                  0x009600                  _TMR2_Stop
+                  0x009608                  _TMR2_GetElapsedThenClear
+                  0x009620                  _TMR2_SoftwareCounterGet
+                  0x00962c                  _TMR2_SoftwareCounterClear
+                  0x009638                  _PIN_MANAGER_Initialize
+                  0x0096e6                  _DMA_Initialize
+                  0x009758                  _DMA_Channel1_Tasks
+                  0x009778                  _DMA_Channel3_Tasks
+                  0x00978a                  _SSD1322_HW_drive_CS_low
+                  0x009792                  _SSD1322_HW_drive_CS_high
+                  0x00979a                  _SSD1322_HW_drive_DC_low
+                  0x0097a2                  _SSD1322_HW_drive_DC_high
+                  0x0097aa                  _SSD1322_HW_drive_RESET_low
+                  0x0097b2                  _SSD1322_HW_drive_RESET_high
+                  0x0097ba                  _SSD1322_HW_SPI_send_byte
+                  0x0097c6                  _SSD1322_HW_SPI_send_array
+                  0x0097f8                  _SSD1322_HW_msDelay
+                  0x009822                  _CLOCK_Initialize
+                  0x009874                  _ADC1_Initialize
+                  0x009898                  _ADC1_SetInterruptHandler
+                  0x0098de                  _SYSTEM_Initialize
+                  0x0098fc                  _INTERRUPT_Initialize
                   0x02ab80                  __FSEC.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x009850                  _ADC1_Initialize
-                  0x009874                  _ADC1_SetInterruptHandler
-                  0x007bea                  _AccChevron
-                  0x0082ae                  _CAN1_Initialize
-                  0x008624                  _CAN1_IsBusOff
-                  0x00863c                  _CAN1_IsRXErrorPassive
-                  0x00866c                  _CAN1_IsRxErrorActive
-                  0x008654                  _CAN1_IsRxErrorWarning
-                  0x008688                  _CAN1_IsTXErrorPassive
-                  0x0086b8                  _CAN1_IsTxErrorActive
-                  0x0086a0                  _CAN1_IsTxErrorWarning
-                  0x0084d2                  _CAN1_OperationModeGet
-                  0x00847c                  _CAN1_OperationModeSet
-                  0x00859a                  _CAN1_Receive
-                  0x008462                  _CAN1_ReceiveEnable
-                  0x0086d4                  _CAN1_ReceivedMessageCountGet
-                  0x008748                  _CAN1_SetBusErrorHandler
-                  0x008782                  _CAN1_SetBusWakeUpActivityInterruptHandler
-                  0x008796                  _CAN1_SetRxBufferInterruptHandler
-                  0x008770                  _CAN1_SetRxErrorPassiveHandler
-                  0x00875c                  _CAN1_SetTxErrorPassiveHandler
-                  0x00871e                  _CAN1_Sleep
-                  0x0084e0                  _CAN1_Transmit
-                  0x008448                  _CAN1_TransmitEnable
-                  0x0089a0                  _CAN1_isBusOff
-                  0x0089b8                  _CAN1_isRXErrorPassive
-                  0x0089d0                  _CAN1_isTXErrorPassive
-                  0x0089e8                  _CAN1_messagesInBuffer
-                  0x0088ac                  _CAN1_receive
-                  0x008a32                  _CAN1_sleep
-                  0x0087a2                  _CAN1_transmit
+                  0x009874                  _ADC1_Initialize
+                  0x009898                  _ADC1_SetInterruptHandler
+                  0x007c0e                  _AccChevron
+                  0x0082d2                  _CAN1_Initialize
+                  0x008648                  _CAN1_IsBusOff
+                  0x008660                  _CAN1_IsRXErrorPassive
+                  0x008690                  _CAN1_IsRxErrorActive
+                  0x008678                  _CAN1_IsRxErrorWarning
+                  0x0086ac                  _CAN1_IsTXErrorPassive
+                  0x0086dc                  _CAN1_IsTxErrorActive
+                  0x0086c4                  _CAN1_IsTxErrorWarning
+                  0x0084f6                  _CAN1_OperationModeGet
+                  0x0084a0                  _CAN1_OperationModeSet
+                  0x0085be                  _CAN1_Receive
+                  0x008486                  _CAN1_ReceiveEnable
+                  0x0086f8                  _CAN1_ReceivedMessageCountGet
+                  0x00876c                  _CAN1_SetBusErrorHandler
+                  0x0087a6                  _CAN1_SetBusWakeUpActivityInterruptHandler
+                  0x0087ba                  _CAN1_SetRxBufferInterruptHandler
+                  0x008794                  _CAN1_SetRxErrorPassiveHandler
+                  0x008780                  _CAN1_SetTxErrorPassiveHandler
+                  0x008742                  _CAN1_Sleep
+                  0x008504                  _CAN1_Transmit
+                  0x00846c                  _CAN1_TransmitEnable
+                  0x0089c4                  _CAN1_isBusOff
+                  0x0089dc                  _CAN1_isRXErrorPassive
+                  0x0089f4                  _CAN1_isTXErrorPassive
+                  0x008a0c                  _CAN1_messagesInBuffer
+                  0x0088d0                  _CAN1_receive
+                  0x008a56                  _CAN1_sleep
+                  0x0087c6                  _CAN1_transmit
                   0x006db2                  _CAN_Receive
                   0x006e86                  _CAN_Transmit
-                  0x0097fe                  _CLOCK_Initialize
+                  0x009822                  _CLOCK_Initialize
                   0x006eca                  _CalculateDisplayValues
-                  0x009734                  _DMA_Channel1_Tasks
-                  0x009754                  _DMA_Channel3_Tasks
-                  0x0096c2                  _DMA_Initialize
+                  0x009758                  _DMA_Channel1_Tasks
+                  0x009778                  _DMA_Channel3_Tasks
+                  0x0096e6                  _DMA_Initialize
                   0x0052a0                  _FixedMono5x7Bitmaps
                   0x005420                  _FixedMono5x7Glyphs
                   0x005b50                  _Font4x7Fixed
@@ -561,85 +561,85 @@ External Symbols in Program Memory (by name):
                   0x002444                  _FreeSerif9pt7b
                   0x001d14                  _FreeSerif9pt7bBitmaps
                   0x00214c                  _FreeSerif9pt7bGlyphs
-                  0x00768c                  _GetBrightnessADC
-                  0x007dce                  _GoToSleep
-                  0x0098d8                  _INTERRUPT_Initialize
+                  0x0076b0                  _GetBrightnessADC
+                  0x007df2                  _GoToSleep
+                  0x0098fc                  _INTERRUPT_Initialize
                   0x003cfc                  _Org_01
                   0x0038f4                  _Org_01Bitmaps
                   0x003a04                  _Org_01Glyphs
-                  0x009614                  _PIN_MANAGER_Initialize
+                  0x009638                  _PIN_MANAGER_Initialize
                   0x00197a                  _Picopixel
                   0x0015ce                  _PicopixelBitmaps
                   0x001682                  _PicopixelGlyphs
-                  0x0093de                  _RESET_CauseClearAll
-                  0x0092ba                  _RESET_GetCause
-                  0x007dea                  _ReturnFromSleep
-                  0x008fe6                  _SPI1_Exchange
-                  0x009120                  _SPI1_Exchange8bit
-                  0x009132                  _SPI1_Exchange8bitBuffer
-                  0x00900e                  _SPI1_ExchangeBuffer
-                  0x008fd4                  _SPI1_Initialize
-                  0x00914e                  _SPI1_StatusGet
-                  0x008dea                  _SSD1322_API_command
-                  0x008f32                  _SSD1322_API_custom_grayscale
-                  0x008dfc                  _SSD1322_API_data
-                  0x008f74                  _SSD1322_API_default_grayscale
-                  0x008e0e                  _SSD1322_API_init
-                  0x008fb4                  _SSD1322_API_send_buffer
-                  0x008f20                  _SSD1322_API_set_brightness
-                  0x008f10                  _SSD1322_API_set_contrast
-                  0x008ec8                  _SSD1322_API_set_display_mode
-                  0x008f7e                  _SSD1322_API_set_window
-                  0x008f06                  _SSD1322_API_sleep_off
-                  0x008efc                  _SSD1322_API_sleep_on
-                  0x0097a2                  _SSD1322_HW_SPI_send_array
-                  0x009796                  _SSD1322_HW_SPI_send_byte
-                  0x00976e                  _SSD1322_HW_drive_CS_high
-                  0x009766                  _SSD1322_HW_drive_CS_low
-                  0x00977e                  _SSD1322_HW_drive_DC_high
-                  0x009776                  _SSD1322_HW_drive_DC_low
-                  0x00978e                  _SSD1322_HW_drive_RESET_high
-                  0x009786                  _SSD1322_HW_drive_RESET_low
-                  0x0097d4                  _SSD1322_HW_msDelay
-                  0x0098ba                  _SYSTEM_Initialize
-                  0x00772e                  _SpeedArrow
-                  0x0091a6                  _TMR1_Counter16BitGet
-                  0x009194                  _TMR1_Counter16BitSet
-                  0x00928a                  _TMR1_GetElapsedThenClear
-                  0x009156                  _TMR1_Initialize
-                  0x00918c                  _TMR1_Period16BitGet
-                  0x00917a                  _TMR1_Period16BitSet
-                  0x009260                  _TMR1_SetInterruptHandler
-                  0x0092ae                  _TMR1_SoftwareCounterClear
-                  0x0092a2                  _TMR1_SoftwareCounterGet
-                  0x009270                  _TMR1_Start
-                  0x009280                  _TMR1_Stop
-                  0x0095c6                  _TMR2_Counter16BitGet
-                  0x0095b4                  _TMR2_Counter16BitSet
-                  0x0095e4                  _TMR2_GetElapsedThenClear
-                  0x009562                  _TMR2_Initialize
-                  0x0095ac                  _TMR2_Period16BitGet
-                  0x00959a                  _TMR2_Period16BitSet
-                  0x009608                  _TMR2_SoftwareCounterClear
-                  0x0095fc                  _TMR2_SoftwareCounterGet
-                  0x0095ce                  _TMR2_Start
-                  0x0095dc                  _TMR2_Stop
-                  0x009578                  _TMR2_Tasks_16BitOperation
+                  0x009402                  _RESET_CauseClearAll
+                  0x0092de                  _RESET_GetCause
+                  0x007e0e                  _ReturnFromSleep
+                  0x00900a                  _SPI1_Exchange
+                  0x009144                  _SPI1_Exchange8bit
+                  0x009156                  _SPI1_Exchange8bitBuffer
+                  0x009032                  _SPI1_ExchangeBuffer
+                  0x008ff8                  _SPI1_Initialize
+                  0x009172                  _SPI1_StatusGet
+                  0x008e0e                  _SSD1322_API_command
+                  0x008f56                  _SSD1322_API_custom_grayscale
+                  0x008e20                  _SSD1322_API_data
+                  0x008f98                  _SSD1322_API_default_grayscale
+                  0x008e32                  _SSD1322_API_init
+                  0x008fd8                  _SSD1322_API_send_buffer
+                  0x008f44                  _SSD1322_API_set_brightness
+                  0x008f34                  _SSD1322_API_set_contrast
+                  0x008eec                  _SSD1322_API_set_display_mode
+                  0x008fa2                  _SSD1322_API_set_window
+                  0x008f2a                  _SSD1322_API_sleep_off
+                  0x008f20                  _SSD1322_API_sleep_on
+                  0x0097c6                  _SSD1322_HW_SPI_send_array
+                  0x0097ba                  _SSD1322_HW_SPI_send_byte
+                  0x009792                  _SSD1322_HW_drive_CS_high
+                  0x00978a                  _SSD1322_HW_drive_CS_low
+                  0x0097a2                  _SSD1322_HW_drive_DC_high
+                  0x00979a                  _SSD1322_HW_drive_DC_low
+                  0x0097b2                  _SSD1322_HW_drive_RESET_high
+                  0x0097aa                  _SSD1322_HW_drive_RESET_low
+                  0x0097f8                  _SSD1322_HW_msDelay
+                  0x0098de                  _SYSTEM_Initialize
+                  0x007752                  _SpeedArrow
+                  0x0091ca                  _TMR1_Counter16BitGet
+                  0x0091b8                  _TMR1_Counter16BitSet
+                  0x0092ae                  _TMR1_GetElapsedThenClear
+                  0x00917a                  _TMR1_Initialize
+                  0x0091b0                  _TMR1_Period16BitGet
+                  0x00919e                  _TMR1_Period16BitSet
+                  0x009284                  _TMR1_SetInterruptHandler
+                  0x0092d2                  _TMR1_SoftwareCounterClear
+                  0x0092c6                  _TMR1_SoftwareCounterGet
+                  0x009294                  _TMR1_Start
+                  0x0092a4                  _TMR1_Stop
+                  0x0095ea                  _TMR2_Counter16BitGet
+                  0x0095d8                  _TMR2_Counter16BitSet
+                  0x009608                  _TMR2_GetElapsedThenClear
+                  0x009586                  _TMR2_Initialize
+                  0x0095d0                  _TMR2_Period16BitGet
+                  0x0095be                  _TMR2_Period16BitSet
+                  0x00962c                  _TMR2_SoftwareCounterClear
+                  0x009620                  _TMR2_SoftwareCounterGet
+                  0x0095f2                  _TMR2_Start
+                  0x009600                  _TMR2_Stop
+                  0x00959c                  _TMR2_Tasks_16BitOperation
                   0x001d0a                  _Tiny3x3a2pt7b
                   0x001984                  _Tiny3x3a2pt7bBitmaps
                   0x001a12                  _Tiny3x3a2pt7bGlyphs
                   0x0040ae                  _TomThumb
                   0x003d06                  _TomThumbBitmaps
                   0x003db6                  _TomThumbGlyphs
-                  0x009558                  _UART1_Disable
-                  0x00954e                  _UART1_Enable
-                  0x0094aa                  _UART1_Initialize
-                  0x0094f4                  _UART1_IsRxReady
-                  0x00952e                  _UART1_IsTxDone
-                  0x00950c                  _UART1_IsTxReady
-                  0x0094be                  _UART1_Read
-                  0x009546                  _UART1_StatusGet
-                  0x0094dc                  _UART1_Write
+                  0x00957c                  _UART1_Disable
+                  0x009572                  _UART1_Enable
+                  0x0094ce                  _UART1_Initialize
+                  0x009518                  _UART1_IsRxReady
+                  0x009552                  _UART1_IsTxDone
+                  0x009530                  _UART1_IsTxReady
+                  0x0094e2                  _UART1_Read
+                  0x00956a                  _UART1_StatusGet
+                  0x009500                  _UART1_Write
                   0x00707c                  _UpdateDisplay
                   0x000358                  __AddressError
                   0x000460                  __C1Interrupt
@@ -705,8 +705,8 @@ External Symbols in Program Memory (by name):
                   0x005cbc                  _draw_vline
                   0x005ba4                  _fill_buffer
                   0x000dc6                  _floorf
-                  0x007632                  _itoa
-                  0x0093e6                  _main
+                  0x007656                  _itoa
+                  0x00940a                  _main
                   0x000e42                  _roundf
                   0x006b1c                  _select_font
                   0x006cd8                  _send_buffer_to_OLED
@@ -943,7 +943,7 @@ __FALTREG
 .comment
  *(.comment)
 
-.debug_info       0x000000      0x16b74
+.debug_info       0x000000      0x16d44
  *(.debug_info)
  .debug_info      0x000000        0x43c build/default/production/mcc_generated_files/clock.o
  .debug_info      0x00043c       0x24c2 build/default/production/mcc_generated_files/system.o
@@ -959,33 +959,33 @@ __FALTREG
  .debug_info      0x00cab3       0x10f7 build/default/production/mcc_generated_files/adc1.o
  .debug_info      0x00dbaa       0x183e build/default/production/mcc_generated_files/tmr1.o
  .debug_info      0x00f3e8       0x15f2 build/default/production/main.o
- .debug_info      0x0109da       0x2641 build/default/production/user.o
- .debug_info      0x01301b        0x49c build/default/production/SSD1322_API.o
- .debug_info      0x0134b7       0x13af build/default/production/SSD1322_GFX.o
- .debug_info      0x014866       0x15bc build/default/production/SSD1322_HW_Driver.o
- .debug_info      0x015e22         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
- .debug_info      0x015eaf         0x8b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
- .debug_info      0x015f3a         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
- .debug_info      0x015fc7         0x90 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
- .debug_info      0x016057         0x8f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
- .debug_info      0x0160e6         0x91 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
- .debug_info      0x016177         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
- .debug_info      0x016204         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
- .debug_info      0x016291         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
- .debug_info      0x01631e         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(addsf3x.EP_o)
- .debug_info      0x0163bb         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(divsf3x.EP_o)
- .debug_info      0x016458         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(mulsf3x.EP_o)
- .debug_info      0x0164f5         0xa0 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(dnrmpackfx.EP_o)
- .debug_info      0x016595         0xa2 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackdnrmfx.EP_o)
- .debug_info      0x016637         0x9c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(typefx.EP_o)
- .debug_info      0x0166d3         0x9f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(propnanfx.EP_o)
- .debug_info      0x016772         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(spackfx.EP_o)
- .debug_info      0x01680f         0x9e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackfx.EP_o)
- .debug_info      0x0168ad         0x8e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
- .debug_info      0x01693b         0x8f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
- .debug_info      0x0169ca         0x91 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
- .debug_info      0x016a5b         0x8b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
- .debug_info      0x016ae6         0x8e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
+ .debug_info      0x0109da       0x2811 build/default/production/user.o
+ .debug_info      0x0131eb        0x49c build/default/production/SSD1322_API.o
+ .debug_info      0x013687       0x13af build/default/production/SSD1322_GFX.o
+ .debug_info      0x014a36       0x15bc build/default/production/SSD1322_HW_Driver.o
+ .debug_info      0x015ff2         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
+ .debug_info      0x01607f         0x8b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
+ .debug_info      0x01610a         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
+ .debug_info      0x016197         0x90 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
+ .debug_info      0x016227         0x8f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
+ .debug_info      0x0162b6         0x91 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
+ .debug_info      0x016347         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
+ .debug_info      0x0163d4         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
+ .debug_info      0x016461         0x8d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
+ .debug_info      0x0164ee         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(addsf3x.EP_o)
+ .debug_info      0x01658b         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(divsf3x.EP_o)
+ .debug_info      0x016628         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(mulsf3x.EP_o)
+ .debug_info      0x0166c5         0xa0 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(dnrmpackfx.EP_o)
+ .debug_info      0x016765         0xa2 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackdnrmfx.EP_o)
+ .debug_info      0x016807         0x9c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(typefx.EP_o)
+ .debug_info      0x0168a3         0x9f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(propnanfx.EP_o)
+ .debug_info      0x016942         0x9d c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(spackfx.EP_o)
+ .debug_info      0x0169df         0x9e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackfx.EP_o)
+ .debug_info      0x016a7d         0x8e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
+ .debug_info      0x016b0b         0x8f c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
+ .debug_info      0x016b9a         0x91 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
+ .debug_info      0x016c2b         0x8b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
+ .debug_info      0x016cb6         0x8e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x185f
@@ -1033,51 +1033,51 @@ __FALTREG
  .debug_abbrev    0x001837         0x14 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
  .debug_abbrev    0x00184b         0x14 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
 
-.debug_line       0x000000       0x2600
+.debug_line       0x000000       0x25d4
  *(.debug_line)
- .debug_line      0x000000        0x121 build/default/production/mcc_generated_files/clock.o
- .debug_line      0x000121        0x162 build/default/production/mcc_generated_files/system.o
- .debug_line      0x000283        0x15e build/default/production/mcc_generated_files/reset.o
- .debug_line      0x0003e1         0x1a build/default/production/mcc_generated_files/mcc.o
- .debug_line      0x0003fb        0x15b build/default/production/mcc_generated_files/traps.o
- .debug_line      0x000556        0x148 build/default/production/mcc_generated_files/pin_manager.o
- .debug_line      0x00069e        0x123 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_line      0x0007c1        0x165 build/default/production/mcc_generated_files/dma.o
- .debug_line      0x000926        0x13d build/default/production/mcc_generated_files/tmr2.o
- .debug_line      0x000a63        0x15e build/default/production/mcc_generated_files/spi1.o
- .debug_line      0x000bc1        0x39c build/default/production/mcc_generated_files/can1.o
- .debug_line      0x000f5d        0x13a build/default/production/mcc_generated_files/uart1.o
- .debug_line      0x001097        0x125 build/default/production/mcc_generated_files/adc1.o
- .debug_line      0x0011bc        0x195 build/default/production/mcc_generated_files/tmr1.o
- .debug_line      0x001351        0x151 build/default/production/main.o
- .debug_line      0x0014a2        0x30b build/default/production/user.o
- .debug_line      0x0017ad        0x115 build/default/production/SSD1322_API.o
- .debug_line      0x0018c2        0x22a build/default/production/SSD1322_GFX.o
- .debug_line      0x001aec        0x139 build/default/production/SSD1322_HW_Driver.o
- .debug_line      0x001c25         0x37 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
- .debug_line      0x001c5c         0x35 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
- .debug_line      0x001c91         0x56 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
- .debug_line      0x001ce7         0x53 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
- .debug_line      0x001d3a         0x3a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
- .debug_line      0x001d74         0x3b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
- .debug_line      0x001daf         0x4a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
- .debug_line      0x001df9         0x45 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
- .debug_line      0x001e3e         0x38 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
- .debug_line      0x001e76        0x136 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(addsf3x.EP_o)
- .debug_line      0x001fac        0x124 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(divsf3x.EP_o)
- .debug_line      0x0020d0         0xcc c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(mulsf3x.EP_o)
- .debug_line      0x00219c         0x72 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(dnrmpackfx.EP_o)
- .debug_line      0x00220e         0x7a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackdnrmfx.EP_o)
- .debug_line      0x002288         0x5e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(typefx.EP_o)
- .debug_line      0x0022e6         0x51 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(propnanfx.EP_o)
- .debug_line      0x002337         0x98 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(spackfx.EP_o)
- .debug_line      0x0023cf         0x79 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackfx.EP_o)
- .debug_line      0x002448         0x1a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(errno.EP_o)
- .debug_line      0x002462         0x53 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
- .debug_line      0x0024b5         0x47 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
- .debug_line      0x0024fc         0x6c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
- .debug_line      0x002568         0x5a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
- .debug_line      0x0025c2         0x3e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
+ .debug_line      0x000000        0x11e build/default/production/mcc_generated_files/clock.o
+ .debug_line      0x00011e        0x15f build/default/production/mcc_generated_files/system.o
+ .debug_line      0x00027d        0x15b build/default/production/mcc_generated_files/reset.o
+ .debug_line      0x0003d8         0x1a build/default/production/mcc_generated_files/mcc.o
+ .debug_line      0x0003f2        0x158 build/default/production/mcc_generated_files/traps.o
+ .debug_line      0x00054a        0x145 build/default/production/mcc_generated_files/pin_manager.o
+ .debug_line      0x00068f        0x120 build/default/production/mcc_generated_files/interrupt_manager.o
+ .debug_line      0x0007af        0x162 build/default/production/mcc_generated_files/dma.o
+ .debug_line      0x000911        0x13a build/default/production/mcc_generated_files/tmr2.o
+ .debug_line      0x000a4b        0x15b build/default/production/mcc_generated_files/spi1.o
+ .debug_line      0x000ba6        0x399 build/default/production/mcc_generated_files/can1.o
+ .debug_line      0x000f3f        0x137 build/default/production/mcc_generated_files/uart1.o
+ .debug_line      0x001076        0x122 build/default/production/mcc_generated_files/adc1.o
+ .debug_line      0x001198        0x192 build/default/production/mcc_generated_files/tmr1.o
+ .debug_line      0x00132a        0x14e build/default/production/main.o
+ .debug_line      0x001478        0x30c build/default/production/user.o
+ .debug_line      0x001784        0x115 build/default/production/SSD1322_API.o
+ .debug_line      0x001899        0x22a build/default/production/SSD1322_GFX.o
+ .debug_line      0x001ac3        0x136 build/default/production/SSD1322_HW_Driver.o
+ .debug_line      0x001bf9         0x37 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
+ .debug_line      0x001c30         0x35 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
+ .debug_line      0x001c65         0x56 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
+ .debug_line      0x001cbb         0x53 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
+ .debug_line      0x001d0e         0x3a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
+ .debug_line      0x001d48         0x3b c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
+ .debug_line      0x001d83         0x4a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
+ .debug_line      0x001dcd         0x45 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
+ .debug_line      0x001e12         0x38 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
+ .debug_line      0x001e4a        0x136 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(addsf3x.EP_o)
+ .debug_line      0x001f80        0x124 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(divsf3x.EP_o)
+ .debug_line      0x0020a4         0xcc c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(mulsf3x.EP_o)
+ .debug_line      0x002170         0x72 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(dnrmpackfx.EP_o)
+ .debug_line      0x0021e2         0x7a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackdnrmfx.EP_o)
+ .debug_line      0x00225c         0x5e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(typefx.EP_o)
+ .debug_line      0x0022ba         0x51 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(propnanfx.EP_o)
+ .debug_line      0x00230b         0x98 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(spackfx.EP_o)
+ .debug_line      0x0023a3         0x79 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(unpackfx.EP_o)
+ .debug_line      0x00241c         0x1a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(errno.EP_o)
+ .debug_line      0x002436         0x53 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
+ .debug_line      0x002489         0x47 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
+ .debug_line      0x0024d0         0x6c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
+ .debug_line      0x00253c         0x5a c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
+ .debug_line      0x002596         0x3e c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
 
 .debug_frame      0x000000       0x14fa
  *(.debug_frame)
@@ -1100,7 +1100,7 @@ __FALTREG
  .debug_frame     0x00123e        0x1be build/default/production/SSD1322_GFX.o
  .debug_frame     0x0013fc         0xfe build/default/production/SSD1322_HW_Driver.o
 
-.debug_str        0x000000       0x1099
+.debug_str        0x000000       0x10a2
  *(.debug_str)
  .debug_str       0x000000          0xb build/default/production/mcc_generated_files/clock.o
  .debug_str       0x00000b        0x21a build/default/production/mcc_generated_files/system.o
@@ -1116,9 +1116,9 @@ __FALTREG
  .debug_str       0x000903         0x87 build/default/production/mcc_generated_files/adc1.o
  .debug_str       0x00098a        0x10f build/default/production/mcc_generated_files/tmr1.o
  .debug_str       0x000a99         0xef build/default/production/main.o
- .debug_str       0x000b88        0x232 build/default/production/user.o
- .debug_str       0x000dba        0x23a build/default/production/SSD1322_GFX.o
- .debug_str       0x000ff4         0xa5 build/default/production/SSD1322_HW_Driver.o
+ .debug_str       0x000b88        0x23b build/default/production/user.o
+ .debug_str       0x000dc3        0x23a build/default/production/SSD1322_GFX.o
+ .debug_str       0x000ffd         0xa5 build/default/production/SSD1322_HW_Driver.o
 
 .debug_loc
  *(.debug_loc)
@@ -2707,7 +2707,7 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x000410       0x1837
+                  0x000410       0x1854
  .debug_pubtypes
                   0x000410         0x4c build/default/production/mcc_generated_files/clock.o
  .debug_pubtypes
@@ -2737,92 +2737,92 @@ LOAD data_init
  .debug_pubtypes
                   0x0015f4        0x1ab build/default/production/main.o
  .debug_pubtypes
-                  0x00179f        0x263 build/default/production/user.o
+                  0x00179f        0x280 build/default/production/user.o
  .debug_pubtypes
-                  0x001a02         0x3e build/default/production/SSD1322_API.o
+                  0x001a1f         0x3e build/default/production/SSD1322_API.o
  .debug_pubtypes
-                  0x001a40         0x68 build/default/production/SSD1322_GFX.o
+                  0x001a5d         0x68 build/default/production/SSD1322_GFX.o
  .debug_pubtypes
-                  0x001aa8        0x19f build/default/production/SSD1322_HW_Driver.o
+                  0x001ac5        0x19f build/default/production/SSD1322_HW_Driver.o
 
 __c30_signature
-                  0x001c47         0xe4
+                  0x001c64         0xe4
  __c30_signature
-                  0x001c47          0x6 build/default/production/mcc_generated_files/clock.o
+                  0x001c64          0x6 build/default/production/mcc_generated_files/clock.o
  __c30_signature
-                  0x001c4d          0x6 build/default/production/mcc_generated_files/system.o
+                  0x001c6a          0x6 build/default/production/mcc_generated_files/system.o
  __c30_signature
-                  0x001c53          0x6 build/default/production/mcc_generated_files/reset.o
+                  0x001c70          0x6 build/default/production/mcc_generated_files/reset.o
  __c30_signature
-                  0x001c59          0x6 build/default/production/mcc_generated_files/mcc.o
+                  0x001c76          0x6 build/default/production/mcc_generated_files/mcc.o
  __c30_signature
-                  0x001c5f          0x6 build/default/production/mcc_generated_files/traps.o
+                  0x001c7c          0x6 build/default/production/mcc_generated_files/traps.o
  __c30_signature
-                  0x001c65          0x6 build/default/production/mcc_generated_files/pin_manager.o
+                  0x001c82          0x6 build/default/production/mcc_generated_files/pin_manager.o
  __c30_signature
-                  0x001c6b          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x001c88          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
  __c30_signature
-                  0x001c71          0x6 build/default/production/mcc_generated_files/dma.o
+                  0x001c8e          0x6 build/default/production/mcc_generated_files/dma.o
  __c30_signature
-                  0x001c77          0x6 build/default/production/mcc_generated_files/tmr2.o
+                  0x001c94          0x6 build/default/production/mcc_generated_files/tmr2.o
  __c30_signature
-                  0x001c7d          0x6 build/default/production/mcc_generated_files/spi1.o
+                  0x001c9a          0x6 build/default/production/mcc_generated_files/spi1.o
  __c30_signature
-                  0x001c83          0x6 build/default/production/mcc_generated_files/can1.o
+                  0x001ca0          0x6 build/default/production/mcc_generated_files/can1.o
  __c30_signature
-                  0x001c89          0x6 build/default/production/mcc_generated_files/uart1.o
+                  0x001ca6          0x6 build/default/production/mcc_generated_files/uart1.o
  __c30_signature
-                  0x001c8f          0x6 build/default/production/mcc_generated_files/adc1.o
+                  0x001cac          0x6 build/default/production/mcc_generated_files/adc1.o
  __c30_signature
-                  0x001c95          0x6 build/default/production/mcc_generated_files/tmr1.o
+                  0x001cb2          0x6 build/default/production/mcc_generated_files/tmr1.o
  __c30_signature
-                  0x001c9b          0x6 build/default/production/main.o
+                  0x001cb8          0x6 build/default/production/main.o
  __c30_signature
-                  0x001ca1          0x6 build/default/production/user.o
+                  0x001cbe          0x6 build/default/production/user.o
  __c30_signature
-                  0x001ca7          0x6 build/default/production/SSD1322_API.o
+                  0x001cc4          0x6 build/default/production/SSD1322_API.o
  __c30_signature
-                  0x001cad          0x6 build/default/production/SSD1322_GFX.o
+                  0x001cca          0x6 build/default/production/SSD1322_GFX.o
  __c30_signature
-                  0x001cb3          0x6 build/default/production/SSD1322_HW_Driver.o
+                  0x001cd0          0x6 build/default/production/SSD1322_HW_Driver.o
  __c30_signature
-                  0x001cb9          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(crt0_extendedep.o)
+                  0x001cd6          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(crt0_extendedep.o)
  __c30_signature
-                  0x001cbf          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(data_init_extended.o)
+                  0x001cdc          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(data_init_extended.o)
  __c30_signature
-                  0x001cc5          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
+                  0x001ce2          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(feqltle.EP_o)
  __c30_signature
-                  0x001ccb          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
+                  0x001ce8          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fgtge.EP_o)
  __c30_signature
-                  0x001cd1          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
+                  0x001cee          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixsfsi.EP_o)
  __c30_signature
-                  0x001cd7          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
+                  0x001cf4          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fixunssfsi.EP_o)
  __c30_signature
-                  0x001cdd          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
+                  0x001cfa          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.EP_o)
  __c30_signature
-                  0x001ce3          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
+                  0x001d00          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatunsisf.EP_o)
  __c30_signature
-                  0x001ce9          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
+                  0x001d06          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack.EP_o)
  __c30_signature
-                  0x001cef          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
+                  0x001d0c          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.EP_o)
  __c30_signature
-                  0x001cf5          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
+                  0x001d12          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.EP_o)
  __c30_signature
-                  0x001cfb          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(errno.EP_o)
+                  0x001d18          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(errno.EP_o)
  __c30_signature
-                  0x001d01          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
+                  0x001d1e          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fcompare.EP_o)
  __c30_signature
-                  0x001d07          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
+                  0x001d24          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.EP_o)
  __c30_signature
-                  0x001d0d          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
+                  0x001d2a          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.EP_o)
  __c30_signature
-                  0x001d13          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
+                  0x001d30          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(fpack.EP_o)
  __c30_signature
-                  0x001d19          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
+                  0x001d36          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(funpack2.EP_o)
  __c30_signature
-                  0x001d1f          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libm-elf.a(floorf.EP_o)
+                  0x001d3c          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libm-elf.a(floorf.EP_o)
  __c30_signature
-                  0x001d25          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libm-elf.a(roundf.EP_o)
+                  0x001d42          0x6 c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libm-elf.a(roundf.EP_o)
 
 .nbss               0x1000         0x5a
  .nbss              0x1000         0x4e build/default/production/user.o
@@ -2889,9 +2889,9 @@ __c30_signature
                     0x30ce                  _lut
                     0x3553                  _data_trans_message
 
-_0000000005FB7B4065ba2fa2
+_0000000006796B4065bccf98
                     0x3600        0x200
- _0000000005FB7B4065ba2fa2
+ _0000000006796B4065bccf98
                     0x3600        0x200 build/default/production/mcc_generated_files/can1.o
 
 .bss                0x355c         0x24
@@ -3051,7 +3051,7 @@ _0000000005FB7B4065ba2fa2
                     0xdb50                  _Font4x7Fixed
  .const             0xdb5a         0x34 build/default/production/user.o
 
-.text             0x005b8e       0x2ee4
+.text             0x005b8e       0x2f08
  .text            0x005b8e       0x117a build/default/production/SSD1322_GFX.o
                   0x005b8e                  _set_buffer_size
                   0x005ba4                  _fill_buffer
@@ -3069,151 +3069,151 @@ _0000000005FB7B4065ba2fa2
                   0x006b28                  _draw_char
                   0x006c6e                  _draw_text
                   0x006cd8                  _send_buffer_to_OLED
- .text            0x006d08       0x1112 build/default/production/user.o
+ .text            0x006d08       0x1136 build/default/production/user.o
                   0x006db2                  _CAN_Receive
                   0x006e86                  _CAN_Transmit
                   0x006eca                  _CalculateDisplayValues
                   0x00707c                  _UpdateDisplay
-                  0x007632                  _itoa
-                  0x00768c                  _GetBrightnessADC
-                  0x00772e                  _SpeedArrow
-                  0x007bea                  _AccChevron
-                  0x007dce                  _GoToSleep
-                  0x007dea                  _ReturnFromSleep
- .text            0x007e1a        0xc58 build/default/production/mcc_generated_files/can1.o
-                  0x0082ae                  _CAN1_Initialize
-                  0x008448                  _CAN1_TransmitEnable
-                  0x008462                  _CAN1_ReceiveEnable
-                  0x00847c                  _CAN1_OperationModeSet
-                  0x0084d2                  _CAN1_OperationModeGet
-                  0x0084e0                  _CAN1_Transmit
-                  0x00859a                  _CAN1_Receive
-                  0x008624                  _CAN1_IsBusOff
-                  0x00863c                  _CAN1_IsRXErrorPassive
-                  0x008654                  _CAN1_IsRxErrorWarning
-                  0x00866c                  _CAN1_IsRxErrorActive
-                  0x008688                  _CAN1_IsTXErrorPassive
-                  0x0086a0                  _CAN1_IsTxErrorWarning
-                  0x0086b8                  _CAN1_IsTxErrorActive
-                  0x0086d4                  _CAN1_ReceivedMessageCountGet
-                  0x00871e                  _CAN1_Sleep
-                  0x008740                  _CAN1_DefaultBusErrorHandler
-                  0x008748                  _CAN1_SetBusErrorHandler
-                  0x008754                  _CAN1_DefaultTxErrorPassiveHandler
-                  0x00875c                  _CAN1_SetTxErrorPassiveHandler
-                  0x008768                  _CAN1_DefaultRxErrorPassiveHandler
-                  0x008770                  _CAN1_SetRxErrorPassiveHandler
-                  0x00877c                  _CAN1_DefaultBusWakeUpActivityHandler
-                  0x008782                  _CAN1_SetBusWakeUpActivityInterruptHandler
-                  0x00878e                  _CAN1_DefaultReceiveBufferHandler
-                  0x008796                  _CAN1_SetRxBufferInterruptHandler
-                  0x0087a2                  _CAN1_transmit
-                  0x0088ac                  _CAN1_receive
-                  0x0089a0                  _CAN1_isBusOff
-                  0x0089b8                  _CAN1_isRXErrorPassive
-                  0x0089d0                  _CAN1_isTXErrorPassive
-                  0x0089e8                  _CAN1_messagesInBuffer
-                  0x008a32                  _CAN1_sleep
-                  0x008a54                  _CAN1_CallbackBusOff
-                  0x008a5a                  _CAN1_CallbackTxErrorPassive
-                  0x008a60                  _CAN1_CallbackRxErrorPassive
-                  0x008a66                  _CAN1_CallbackMessageReceived
+                  0x007656                  _itoa
+                  0x0076b0                  _GetBrightnessADC
+                  0x007752                  _SpeedArrow
+                  0x007c0e                  _AccChevron
+                  0x007df2                  _GoToSleep
+                  0x007e0e                  _ReturnFromSleep
+ .text            0x007e3e        0xc58 build/default/production/mcc_generated_files/can1.o
+                  0x0082d2                  _CAN1_Initialize
+                  0x00846c                  _CAN1_TransmitEnable
+                  0x008486                  _CAN1_ReceiveEnable
+                  0x0084a0                  _CAN1_OperationModeSet
+                  0x0084f6                  _CAN1_OperationModeGet
+                  0x008504                  _CAN1_Transmit
+                  0x0085be                  _CAN1_Receive
+                  0x008648                  _CAN1_IsBusOff
+                  0x008660                  _CAN1_IsRXErrorPassive
+                  0x008678                  _CAN1_IsRxErrorWarning
+                  0x008690                  _CAN1_IsRxErrorActive
+                  0x0086ac                  _CAN1_IsTXErrorPassive
+                  0x0086c4                  _CAN1_IsTxErrorWarning
+                  0x0086dc                  _CAN1_IsTxErrorActive
+                  0x0086f8                  _CAN1_ReceivedMessageCountGet
+                  0x008742                  _CAN1_Sleep
+                  0x008764                  _CAN1_DefaultBusErrorHandler
+                  0x00876c                  _CAN1_SetBusErrorHandler
+                  0x008778                  _CAN1_DefaultTxErrorPassiveHandler
+                  0x008780                  _CAN1_SetTxErrorPassiveHandler
+                  0x00878c                  _CAN1_DefaultRxErrorPassiveHandler
+                  0x008794                  _CAN1_SetRxErrorPassiveHandler
+                  0x0087a0                  _CAN1_DefaultBusWakeUpActivityHandler
+                  0x0087a6                  _CAN1_SetBusWakeUpActivityInterruptHandler
+                  0x0087b2                  _CAN1_DefaultReceiveBufferHandler
+                  0x0087ba                  _CAN1_SetRxBufferInterruptHandler
+                  0x0087c6                  _CAN1_transmit
+                  0x0088d0                  _CAN1_receive
+                  0x0089c4                  _CAN1_isBusOff
+                  0x0089dc                  _CAN1_isRXErrorPassive
+                  0x0089f4                  _CAN1_isTXErrorPassive
+                  0x008a0c                  _CAN1_messagesInBuffer
+                  0x008a56                  _CAN1_sleep
+                  0x008a78                  _CAN1_CallbackBusOff
+                  0x008a7e                  _CAN1_CallbackTxErrorPassive
+                  0x008a84                  _CAN1_CallbackRxErrorPassive
+                  0x008a8a                  _CAN1_CallbackMessageReceived
 
-.dinit            0x008a72        0x378
- .dinit           0x008a72        0x378 data_init
+.dinit            0x008a96        0x378
+ .dinit           0x008a96        0x378 data_init
 
-.text             0x008dea        0xb3e
- .text            0x008dea        0x1ea build/default/production/SSD1322_API.o
-                  0x008dea                  _SSD1322_API_command
-                  0x008dfc                  _SSD1322_API_data
-                  0x008e0e                  _SSD1322_API_init
-                  0x008ec8                  _SSD1322_API_set_display_mode
-                  0x008efc                  _SSD1322_API_sleep_on
-                  0x008f06                  _SSD1322_API_sleep_off
-                  0x008f10                  _SSD1322_API_set_contrast
-                  0x008f20                  _SSD1322_API_set_brightness
-                  0x008f32                  _SSD1322_API_custom_grayscale
-                  0x008f74                  _SSD1322_API_default_grayscale
-                  0x008f7e                  _SSD1322_API_set_window
-                  0x008fb4                  _SSD1322_API_send_buffer
- .text            0x008fd4        0x182 build/default/production/mcc_generated_files/spi1.o
-                  0x008fd4                  _SPI1_Initialize
-                  0x008fe6                  _SPI1_Exchange
-                  0x00900e                  _SPI1_ExchangeBuffer
-                  0x009120                  _SPI1_Exchange8bit
-                  0x009132                  _SPI1_Exchange8bitBuffer
-                  0x00914e                  _SPI1_StatusGet
- .text            0x009156        0x164 build/default/production/mcc_generated_files/tmr1.o
-                  0x009156                  _TMR1_Initialize
-                  0x00917a                  _TMR1_Period16BitSet
-                  0x00918c                  _TMR1_Period16BitGet
-                  0x009194                  _TMR1_Counter16BitSet
-                  0x0091a6                  _TMR1_Counter16BitGet
-                  0x0091ae                  _TMR1_CallBack
-                  0x009260                  _TMR1_SetInterruptHandler
-                  0x009270                  _TMR1_Start
-                  0x009280                  _TMR1_Stop
-                  0x00928a                  _TMR1_GetElapsedThenClear
-                  0x0092a2                  _TMR1_SoftwareCounterGet
-                  0x0092ae                  _TMR1_SoftwareCounterClear
- .text            0x0092ba        0x12c build/default/production/mcc_generated_files/reset.o
-                  0x0092ba                  _RESET_GetCause
-                  0x0092c2                  _RESET_CauseHandler
-                  0x0093de                  _RESET_CauseClearAll
- .text            0x0093e6         0xc4 build/default/production/main.o
-                  0x0093e6                  _main
- .text            0x0094aa         0xb8 build/default/production/mcc_generated_files/uart1.o
-                  0x0094aa                  _UART1_Initialize
-                  0x0094be                  _UART1_Read
-                  0x0094dc                  _UART1_Write
-                  0x0094f4                  _UART1_IsRxReady
-                  0x00950c                  _UART1_IsTxReady
-                  0x00952e                  _UART1_IsTxDone
-                  0x009546                  _UART1_StatusGet
-                  0x00954e                  _UART1_Enable
-                  0x009558                  _UART1_Disable
- .text            0x009562         0xb2 build/default/production/mcc_generated_files/tmr2.o
-                  0x009562                  _TMR2_Initialize
-                  0x009578                  _TMR2_Tasks_16BitOperation
-                  0x00959a                  _TMR2_Period16BitSet
-                  0x0095ac                  _TMR2_Period16BitGet
-                  0x0095b4                  _TMR2_Counter16BitSet
-                  0x0095c6                  _TMR2_Counter16BitGet
-                  0x0095ce                  _TMR2_Start
-                  0x0095dc                  _TMR2_Stop
-                  0x0095e4                  _TMR2_GetElapsedThenClear
-                  0x0095fc                  _TMR2_SoftwareCounterGet
-                  0x009608                  _TMR2_SoftwareCounterClear
- .text            0x009614         0xae build/default/production/mcc_generated_files/pin_manager.o
-                  0x009614                  _PIN_MANAGER_Initialize
- .text            0x0096c2         0xa4 build/default/production/mcc_generated_files/dma.o
-                  0x0096c2                  _DMA_Initialize
-                  0x009728                  _DMA_Channel0_CallBack
-                  0x00972e                  _DMA_Channel1_CallBack
-                  0x009734                  _DMA_Channel1_Tasks
-                  0x009748                  _DMA_Channel2_CallBack
-                  0x00974e                  _DMA_Channel3_CallBack
-                  0x009754                  _DMA_Channel3_Tasks
- .text            0x009766         0x98 build/default/production/SSD1322_HW_Driver.o
-                  0x009766                  _SSD1322_HW_drive_CS_low
-                  0x00976e                  _SSD1322_HW_drive_CS_high
-                  0x009776                  _SSD1322_HW_drive_DC_low
-                  0x00977e                  _SSD1322_HW_drive_DC_high
-                  0x009786                  _SSD1322_HW_drive_RESET_low
-                  0x00978e                  _SSD1322_HW_drive_RESET_high
-                  0x009796                  _SSD1322_HW_SPI_send_byte
-                  0x0097a2                  _SSD1322_HW_SPI_send_array
-                  0x0097d4                  _SSD1322_HW_msDelay
- .text            0x0097fe         0x52 build/default/production/mcc_generated_files/clock.o
-                  0x0097fe                  _CLOCK_Initialize
- .text            0x009850         0x4c build/default/production/mcc_generated_files/adc1.o
-                  0x009850                  _ADC1_Initialize
-                  0x00986e                  _ADC1_CallBack
-                  0x009874                  _ADC1_SetInterruptHandler
-                  0x009880                  _ADC1_Tasks
- .text            0x00989c         0x3c build/default/production/mcc_generated_files/system.o
-                  0x0098ba                  _SYSTEM_Initialize
- .text            0x0098d8         0x38 build/default/production/mcc_generated_files/interrupt_manager.o
-                  0x0098d8                  _INTERRUPT_Initialize
- .text            0x009910         0x18 build/default/production/mcc_generated_files/traps.o
-                  0x009910                  _TRAPS_halt_on_error
+.text             0x008e0e        0xb3e
+ .text            0x008e0e        0x1ea build/default/production/SSD1322_API.o
+                  0x008e0e                  _SSD1322_API_command
+                  0x008e20                  _SSD1322_API_data
+                  0x008e32                  _SSD1322_API_init
+                  0x008eec                  _SSD1322_API_set_display_mode
+                  0x008f20                  _SSD1322_API_sleep_on
+                  0x008f2a                  _SSD1322_API_sleep_off
+                  0x008f34                  _SSD1322_API_set_contrast
+                  0x008f44                  _SSD1322_API_set_brightness
+                  0x008f56                  _SSD1322_API_custom_grayscale
+                  0x008f98                  _SSD1322_API_default_grayscale
+                  0x008fa2                  _SSD1322_API_set_window
+                  0x008fd8                  _SSD1322_API_send_buffer
+ .text            0x008ff8        0x182 build/default/production/mcc_generated_files/spi1.o
+                  0x008ff8                  _SPI1_Initialize
+                  0x00900a                  _SPI1_Exchange
+                  0x009032                  _SPI1_ExchangeBuffer
+                  0x009144                  _SPI1_Exchange8bit
+                  0x009156                  _SPI1_Exchange8bitBuffer
+                  0x009172                  _SPI1_StatusGet
+ .text            0x00917a        0x164 build/default/production/mcc_generated_files/tmr1.o
+                  0x00917a                  _TMR1_Initialize
+                  0x00919e                  _TMR1_Period16BitSet
+                  0x0091b0                  _TMR1_Period16BitGet
+                  0x0091b8                  _TMR1_Counter16BitSet
+                  0x0091ca                  _TMR1_Counter16BitGet
+                  0x0091d2                  _TMR1_CallBack
+                  0x009284                  _TMR1_SetInterruptHandler
+                  0x009294                  _TMR1_Start
+                  0x0092a4                  _TMR1_Stop
+                  0x0092ae                  _TMR1_GetElapsedThenClear
+                  0x0092c6                  _TMR1_SoftwareCounterGet
+                  0x0092d2                  _TMR1_SoftwareCounterClear
+ .text            0x0092de        0x12c build/default/production/mcc_generated_files/reset.o
+                  0x0092de                  _RESET_GetCause
+                  0x0092e6                  _RESET_CauseHandler
+                  0x009402                  _RESET_CauseClearAll
+ .text            0x00940a         0xc4 build/default/production/main.o
+                  0x00940a                  _main
+ .text            0x0094ce         0xb8 build/default/production/mcc_generated_files/uart1.o
+                  0x0094ce                  _UART1_Initialize
+                  0x0094e2                  _UART1_Read
+                  0x009500                  _UART1_Write
+                  0x009518                  _UART1_IsRxReady
+                  0x009530                  _UART1_IsTxReady
+                  0x009552                  _UART1_IsTxDone
+                  0x00956a                  _UART1_StatusGet
+                  0x009572                  _UART1_Enable
+                  0x00957c                  _UART1_Disable
+ .text            0x009586         0xb2 build/default/production/mcc_generated_files/tmr2.o
+                  0x009586                  _TMR2_Initialize
+                  0x00959c                  _TMR2_Tasks_16BitOperation
+                  0x0095be                  _TMR2_Period16BitSet
+                  0x0095d0                  _TMR2_Period16BitGet
+                  0x0095d8                  _TMR2_Counter16BitSet
+                  0x0095ea                  _TMR2_Counter16BitGet
+                  0x0095f2                  _TMR2_Start
+                  0x009600                  _TMR2_Stop
+                  0x009608                  _TMR2_GetElapsedThenClear
+                  0x009620                  _TMR2_SoftwareCounterGet
+                  0x00962c                  _TMR2_SoftwareCounterClear
+ .text            0x009638         0xae build/default/production/mcc_generated_files/pin_manager.o
+                  0x009638                  _PIN_MANAGER_Initialize
+ .text            0x0096e6         0xa4 build/default/production/mcc_generated_files/dma.o
+                  0x0096e6                  _DMA_Initialize
+                  0x00974c                  _DMA_Channel0_CallBack
+                  0x009752                  _DMA_Channel1_CallBack
+                  0x009758                  _DMA_Channel1_Tasks
+                  0x00976c                  _DMA_Channel2_CallBack
+                  0x009772                  _DMA_Channel3_CallBack
+                  0x009778                  _DMA_Channel3_Tasks
+ .text            0x00978a         0x98 build/default/production/SSD1322_HW_Driver.o
+                  0x00978a                  _SSD1322_HW_drive_CS_low
+                  0x009792                  _SSD1322_HW_drive_CS_high
+                  0x00979a                  _SSD1322_HW_drive_DC_low
+                  0x0097a2                  _SSD1322_HW_drive_DC_high
+                  0x0097aa                  _SSD1322_HW_drive_RESET_low
+                  0x0097b2                  _SSD1322_HW_drive_RESET_high
+                  0x0097ba                  _SSD1322_HW_SPI_send_byte
+                  0x0097c6                  _SSD1322_HW_SPI_send_array
+                  0x0097f8                  _SSD1322_HW_msDelay
+ .text            0x009822         0x52 build/default/production/mcc_generated_files/clock.o
+                  0x009822                  _CLOCK_Initialize
+ .text            0x009874         0x4c build/default/production/mcc_generated_files/adc1.o
+                  0x009874                  _ADC1_Initialize
+                  0x009892                  _ADC1_CallBack
+                  0x009898                  _ADC1_SetInterruptHandler
+                  0x0098a4                  _ADC1_Tasks
+ .text            0x0098c0         0x3c build/default/production/mcc_generated_files/system.o
+                  0x0098de                  _SYSTEM_Initialize
+ .text            0x0098fc         0x38 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x0098fc                  _INTERRUPT_Initialize
+ .text            0x009934         0x18 build/default/production/mcc_generated_files/traps.o
+                  0x009934                  _TRAPS_halt_on_error

@@ -364,8 +364,11 @@ void UpdateDisplay(uint8_t brightness){
         if(vehicle.lap_number>0){
         if(lut[(int)offset] > vehicle.speed*2) AccChevron(56, 17);
         }
-        
-        send_buffer_to_OLED(tx_buf, 0, 0);    
+        IPC8bits.C1RXIP = 0;
+        IPC8bits.C1IP = 0;
+        send_buffer_to_OLED(tx_buf, 0, 0); 
+        IPC8bits.C1RXIP = 1;
+        IPC8bits.C1IP = 1;
         
         
         display_hz_cnt++;     
